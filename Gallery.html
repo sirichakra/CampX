@@ -1,0 +1,184 @@
+<html>
+<head>
+  <title>Team - 5</title>
+  <link rel="stylesheet" href="Gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+  <div class="nav-container">
+    <div class="logo">
+        <img src="logo2_left.png">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="navbar">
+      <li><a href="Home.html"><h2>HOME</h2></a></li>
+
+      <li>
+        <a href="Events.html"><h2>EVENTS</h2> </a>
+        <ul class="dropdown">
+          <li><a href="#">Today’s Events</a></li>
+          <li><a href="#">Countdown Timer</a></li>
+          <li><a href="#">Event Categories</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="Talents1.html"><h2>TALENTS</h2></a>
+        <ul class="dropdown">
+          <li><a href="#">Talent Wall</a></li>
+          <li><a href="#">Puzzle Collage</a></li>
+          <li><a href="#">Spotlight</a></li>
+          <li><a href="#">Achievements</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="news.html"><h2>NEWS</h2> </a>
+        <!-- <ul class="dropdown">
+          <li><a href="#">Campus News</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Quote of the Day</a></li>
+        </ul> -->
+      </li>
+
+      <li>
+        <a href="interface.html"><h2>CLUBS</h2> </a>
+      </li>
+
+      <li>
+        <a href="Gallery.html"><h2>INTERACTIVE</h2> </a>
+        <ul class="dropdown">
+          <li><a href="map.html">Campus Map</a></li>
+          <li><a href="mood.html">Positivity Wall</a></li>
+          <li><a href="letter.html">Open Letters</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="calendar.html">Mini Calender</a></li>
+          <li><a href="wishing-wall.html">Wishing</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html"><h2>ABOUT</h2></a></li>
+
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="switch">
+          <div class="slider">
+            <i class="fas fa-sun icon sun"></i>
+            <i class="fas fa-moon icon moon"></i>
+          </div>
+        </label>
+      </div>
+      
+      
+    </ul>
+  </div>
+  
+  
+</nav>
+
+    <div class="space"></div>
+
+    <section class="container">
+            <div class="button=grid">
+                <a href="mood.html" class="nav-button">Mood of the Day</a>
+                <a href="quote.html" class="nav-button">Motivational Quote of the Day</a>
+                <a href="letter.html" class="nav-button">Open Letter</a>
+            </div>
+        </section>
+
+  <div class="main">
+    <h1>PHOTO GALLERY</h1>
+
+    <div class="top">
+      <h3>Photos</h3>
+      <label for="check1">All Photos</label>
+      <label for="check2">College Photos</label>
+      <label for="check3">Fest Photos</label>
+      <label for="check4">Sports Photos</label>
+    </div>
+
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+
+    <div class="photos">
+      <div class="pic college"><img src="photo1.jpg"></div>
+      <div class="pic sports"><img src="photo14.jpeg"></div>
+      <div class="pic fest"><img src="photo7.jpg"></div>
+      <div class="pic college"><img src="photo5.jpeg"></div>
+      <div class="pic fest"><img src="photo6.jpg"></div>
+      <div class="pic fest"><img src="photo8.jpeg"></div>
+      <div class="pic sports"><img src="photo11.jpg"></div>
+      <div class="pic college"><img src="photo3.jpg"></div>
+      <div class="pic fest"><img src="photo9.jpeg"></div>
+      <div class="pic sports"><img src="photo13.jpeg"></div>
+      <div class="pic college"><img src="photo4.jpg"></div>
+      <div class="pic college"><img src="photo2.jpeg"></div>
+      <div class="pic fest"><img src="photo10.jpeg"></div>
+      <div class="pic sports"><img src="photo12.jpeg"></div>
+
+    </div>
+  </div>
+
+  <footer>
+  <div class="footer-container">
+    <!-- <div class="footer-section">
+      <h2 class="footer-heading">🚀 Campus Connect</h2>
+      <p>Uniting ideas, talents, and opportunities on campus.</p>
+    </div> -->
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Home</li>
+        <li>Explore Clubs</li>
+        <li>Events</li>
+        <li>News & Announcements</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Resources</h3>
+      <ul>
+        <li>Student Helpdesk</li>
+        <li>FAQs</li>
+        <li>Guidelines</li>
+        <li>Terms & Privacy</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📍Surampalem, Andhra Pradesh</p>
+      <p>📧 campx@university.edu</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+      </p>
+    </div>
+
+    <div class="footer-logo-section">
+      <img src="logo2_left.png" class="footer-logo" />
+      <!-- <h2 style="margin: 5px 0 0; font-size: 22px;">CampX</h2>
+      <p style="font-size: 12px;">Where Campus Meets Experience</p> -->
+    </div>
+  </div>
+
+  <div class="footer-bottom" style="text-align: center; padding: 15px 0; color: #b0eaff;">
+    © 2025 CampX. Crafted with ❤️.
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CampusX</title>
+  
+  
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+        <img src="logo2_left.png">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="navbar">
+      <li><a href="Home.html"><h2>HOME</h2></a></li>
+
+      <li>
+        <a href="Events.html"><h2>EVENTS</h2> </a>
+        <ul class="dropdown">
+          <li><a href="Events.html">Today’s Events</a></li>
+          <li><a href="Events.html">Countdown Timer</a></li>
+          <li><a href="Events.html">Event Categories</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="Talents1.html"><h2>TALENTS</h2></a>
+        <ul class="dropdown">
+          <li><a href="#">Talent Wall</a></li>
+          <li><a href="#">Puzzle Collage</a></li>
+          <li><a href="#">Spotlight</a></li>
+          <li><a href="#">Achievements</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="news.html"><h2>NEWS</h2> </a>
+        <!-- <ul class="dropdown">
+          <li><a href="#">Campus News</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Quote of the Day</a></li>
+        </ul> -->
+      </li>
+
+      <li>
+        <a href="interface.html"><h2>CLUBS</h2> </a>
+      </li>
+
+      <li>
+        <a href="Gallery.html"><h2>INTERACTIVE</h2> </a>
+        <ul class="dropdown">
+          <li><a href="map.html">Campus Map</a></li>
+          <li><a href="quote.html">Positivity Wall</a></li>
+          <li><a href="letter.html">Open Letters</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="calendar.html">Mini Calender</a></li>
+          <li><a href="wishing-wall.html">Wishing</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html"><h2>ABOUT</h2></a></li>
+
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="switch">
+          <div class="slider">
+            <i class="fas fa-sun icon sun"></i>
+            <i class="fas fa-moon icon moon"></i>
+          </div>
+        </label>
+      </div>
+      
+      
+    </ul>
+  </div>
+  
+  
+</nav>
+
+ <section class="live-events-banner">
+    <div class="live-label">
+      <span class="dot"></span>
+      LIVE NOW
+    </div>
+    <img src="event_two.jpg" height="500px"  alt="Live Events" class="banner-img">
+ </section> 
+  
+  <section class="explore-section">
+    <div class="explore-container">
+      <div class="explore-image">
+        <img src="explore_communities.png" alt="Explore Communities" />
+      </div>
+      <div class="explore-text">
+        <h1>Explore and Collaborate with Communities</h1>
+        <p>Join like-minded students, discover exciting events, and be part of a dynamic campus culture. Whether you're into tech, arts, social impact, or leadership — there's a space for everyone to shine and grow.</p>
+      </div>
+    </div>
+  
+  <section class="community-icons">
+    <h2 class="community-heading">Join a Community</h2>
+    <div class="icons-wrapper">
+      <a href="sports.html" class="icon-box" title="Sports">
+        <i class="fas fa-football-ball"></i>
+        <span class="icon-label">Sports</span>
+      </a>
+      <a href="tech.html" class="icon-box" title="Tech">
+        <i class="fas fa-microchip"></i>
+        <span class="icon-label">Tech</span>
+      </a>
+      <a href="music.html" class="icon-box" title="Music">
+        <i class="fas fa-music"></i>
+        <span class="icon-label">Music</span>
+      </a>
+      <a href="art.html" class="icon-box" title="Art">
+        <i class="fas fa-paint-brush"></i>
+        <span class="icon-label">Art</span>
+      </a>
+      <a href="leadership.html" class="icon-box" title="Leadership">
+        <i class="fas fa-chess-king"></i>
+        <span class="icon-label">Leadership</span>
+      </a>
+    </div>
+  </section>
+  </section>
+
+  <section class="clubs-section">
+    <h2 class="clubs-heading">Explore Clubs in Our University</h2>
+    <div class="club-cards">
+      <!-- Club Card 1 -->
+      <div class="club-card">
+        <img src="rotaract.png" alt="Tech Club">
+        <div class="club-info">Rotaract Club</div>
+      </div>
+  
+      <!-- Club Card 2 -->
+      <div class="club-card">
+        <img src="leo.png" alt="Music Club">
+        <div class="club-info">Leo Club</div>
+      </div>
+  
+      <!-- Club Card 3 -->
+      <div class="club-card">
+        <img src="redcross.png"   alt="Dance Club">
+        <div class="club-info">Redcross Club</div>
+      </div>
+  
+      <!-- Club Card 4 -->
+      <div class="club-card">
+        <img src="nss.png" alt="Art Club">
+        <div class="club-info">NSS Club</div>
+      </div>
+  
+      <!-- Club Card 5 -->
+      <div class="club-card">
+        <img src="soccer_club.png" alt="Photography Club">
+        <div class="club-info">Scoccer Club</div>
+      </div>
+  
+      <!-- Club Card 6 -->
+      <div class="club-card">
+        <img src="Black and White Photography Camera Photo Studio Logo.png" alt="Sports Club">
+        <div class="club-info">Photography Club</div>
+      </div>
+    </div>
+  </section>
+  <section class="news-section">
+    <div class="news-header">
+      <h2>📰 News Preview</h2>
+      <span class="live-badge">🔴 Live</span>
+    </div>
+  
+    <div class="news-layout">
+      <div class="news-box">
+        <ul class="news-list">
+          <li>📢 Hackathon registrations open until June 15.</li>
+          <li>🎤 Guest lecture by IIT alumni this Friday!</li>
+          <li>🎨 Arts Club workshop on digital painting - June 12.</li>
+          <li>📚 Library will remain closed this weekend.</li>
+          <li>🎉 Tech Fest 2K25 launching soon. Stay tuned!</li>
+          <li>📢 Hackathon registrations open until June 15.</li>
+          <li>🎤 Guest lecture by IIT alumni this Friday!</li>
+          <li>🎨 Arts Club workshop on digital painting - June 12.</li>
+          <li>📚 Library will remain closed this weekend.</li>
+          <li>🎉 Tech Fest 2K25 launching soon. Stay tuned!</li>
+          <li>📢 Hackathon registrations open until June 15.</li>
+          <li>🎤 Guest lecture by IIT alumni this Friday!</li>
+          <li>🎨 Arts Club workshop on digital painting - June 12.</li>
+          <li>📚 Library will remain closed this weekend.</li>
+          <li>🎉 Tech Fest 2K25 launching soon. Stay tuned!</li>
+          <li>📢 Hackathon registrations open until June 15.</li>
+          <li>🎤 Guest lecture by IIT alumni this Friday!</li>
+          <li>🎨 Arts Club workshop on digital painting - June 12.</li>
+          <li>📚 Library will remain closed this weekend.</li>
+          <li>🎉 Tech Fest 2K25 launching soon. Stay tuned!</li>
+          <li>📢 Hackathon registrations open until June 15.</li>
+          <li>🎤 Guest lecture by IIT alumni this Friday!</li>
+          <li>🎨 Arts Club workshop on digital painting - June 12.</li>
+          <li>📚 Library will remain closed this weekend.</li>
+          <li>🎉 Tech Fest 2K25 launching soon. Stay tuned!</li>
+          <li>📢 Hackathon registrations open until June 15.</li>
+          <li>🎤 Guest lecture by IIT alumni this Friday!</li>
+          <li>🎨 Arts Club workshop on digital painting - June 12.</li>
+          <li>📚 Library will remain closed this weekend.</li>
+          <li>🎉 Tech Fest 2K25 launching soon. Stay tuned!</li>
+        </ul>
+      </div>
+  
+      <div class="news-image">
+        <img src="news3.png" alt="News" />
+      </div>
+    </div>
+  </section>
+  
+  <!-- BLOG POSTS SECTION -->
+<section class="blog-section">
+  <h2 class="blog-heading">Knowledge Sharing & Blog Posts</h2>
+  
+  <div class="blog-container">
+    <div class="news-image">
+        <img src="Blog post-bro.png" alt="News" />
+      </div>
+    <div class="blog-card">
+      <h3>How to Win Hackathons</h3>
+      <p>Sharing tips from my recent 24-hour hackathon experience and how we stayed focused...</p>
+      <div class="blog-meta">
+        <span class="author">By Varnika Karri</span>
+        <span class="tag tech">Tech</span>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <h3>Campus Fest Memories</h3>
+      <p>A colorful recap of our college fest and how different clubs came together...</p>
+      <div class="blog-meta">
+        <span class="author">By Sai Ramya</span>
+        <span class="tag culture">Culture</span>
+      </div>
+    </div>
+
+    
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+    <!-- <div class="footer-section">
+      <h2 class="footer-heading">🚀 Campus Connect</h2>
+      <p>Uniting ideas, talents, and opportunities on campus.</p>
+    </div> -->
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Home</li>
+        <li>Explore Clubs</li>
+        <li>Events</li>
+        <li>News & Announcements</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Resources</h3>
+      <ul>
+        <li>Student Helpdesk</li>
+        <li>FAQs</li>
+        <li>Guidelines</li>
+        <li>Terms & Privacy</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📍Surampalem, Andhra Pradesh</p>
+      <p>📧 campx@university.edu</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+      </p>
+    </div>
+
+    <div class="footer-logo-section">
+      <img src="logo2_left.png" class="footer-logo" />
+      <!-- <h2 style="margin: 5px 0 0; font-size: 22px;">CampX</h2>
+      <p style="font-size: 12px;">Where Campus Meets Experience</p> -->
+    </div>
+  </div>
+
+  <div class="footer-bottom" style="text-align: center; padding: 15px 0; color: #b0eaff;">
+    © 2025 CampX. Crafted with ❤️.
+  </div>
+</footer>
+
+
+  
+
+
+</body>
+</html>

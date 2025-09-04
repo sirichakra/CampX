@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #DEF5F7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quote-box {
+  background: white;
+  border-left: 5px solid #DD2D4A;
+  padding: 25px 20px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box h2 {
+  font-size: 22px;
+  color: #DD2D4A;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quotes {
+  position: relative;
+  height: 100px;
+}
+
+blockquote {
+  position: absolute;
+  opacity: 0;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #333;
+  width: 100%;
+  margin: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.q1 {
+  animation: fadeQuotes 16s linear infinite;
+}
+.q2 {
+  animation: fadeQuotes 16s linear infinite;
+  animation-delay: 4s;
+}
+.q3 {
+  animation: fadeQuotes 16s linear infinite;
+  animation-delay: 8s;
+}
+.q4 {
+  animation: fadeQuotes 16s linear infinite;
+  animation-delay: 12s;
+}
+
+@keyframes fadeQuotes {
+  0%, 100% { opacity: 0; }
+  5%, 25% { opacity: 1; }
+  30%, 100% { opacity: 0; }
+}
+
+blockquote span {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Entry Zoom Animation */
+.quote-box {
+  animation: zoomIn 0.8s ease-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.90);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Floating effect for quotes */
+blockquote {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+

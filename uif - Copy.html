@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UIF Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+
+    .box {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #ddd;
+      border-radius: 16px;
+      padding: 40px 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+
+    .logo-inside {
+      align-self: flex-start;
+      font-family: "Dancing Script", cursive;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to right, #c2185b, #f06292);
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .box h2 {
+      color: #ad1457;
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .event-box {
+      background-color: #fff3e0;
+      border: 2px solid #ffb74d;
+      color: #4e342e;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 18px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 25px;
+    }
+
+    .sports {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+      margin-bottom: 30px;
+      width: 90%;
+    }
+
+    .sports ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .image {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
+    .image img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      transition: transform 0.3s;
+    }
+
+    .image img:hover {
+      transform: scale(1.05);
+    }
+
+    .comment-section {
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .comment-section h3 {
+      font-family: "Dancing Script", cursive;
+      font-size: 24px;
+      color: #ad1457;
+      margin-bottom: 10px;
+    }
+
+    .comment-section textarea {
+      width: 100%;
+      height: 100px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+    }
+
+    .comment-section input {
+      margin-top: 10px;
+      padding: 10px 24px;
+      font-size: 16px;
+      background: #ad1457;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .comment-section input:hover {
+      background: #880e4f;
+    }
+
+    .qr {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .qr h3 {
+      color: #ad1457;
+      font-style: italic;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .qr img {
+      width: 180px;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+   </style>
+</head>
+<body>
+
+  <div class="box">
+    <div class="logo-inside">🚀 UIF Club</div>
+
+    <h2>INFORMATION ABOUT UNIVERSITY INNOVATION FELLOWS CLUB</h2>
+
+    <div class="event-box">
+      🎤 <strong>Today's Event:</strong> Design Thinking Workshop<br>
+      📍 <strong>Venue:</strong> Innovation Cell Hall<br>
+      🕒 <strong>Time:</strong> 2:00 PM
+    </div>
+
+    <div class="sports">
+      <p>
+        The University Innovation Fellows (UIF) Club empowers students to become leaders of change by fostering innovation and entrepreneurial mindset across campus. 
+        Fellows identify challenges, collaborate on creative solutions, and organize events that spark curiosity and leadership. 
+        UIF provides training, global exposure, and resources to drive impactful transformations in education.
+      </p>
+      <ul>
+        <li>Access to national and international fellowships and workshops.</li>
+        <li>Engage in projects focused on innovation, design, and impact.</li>
+      </ul>
+    </div>
+
+    <div class="image">
+      <img src="uif1.jpg" alt="UIF Image 1">
+      <img src="uif2.jpg" alt="UIF Image 2">
+      <img src="uif3.jpg" alt="UIF Image 3">
+      <img src="uif4.jpg" alt="UIF Image 4">
+
+    </div>
+
+    <div class="comment-section">
+      <h3>Leave a Comment</h3>
+      <form action="#" method="post">
+        <textarea name="comment" placeholder="Write your comment here..."></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div class="qr">
+      <h3>JOIN OUR WHATSAPP GROUP</h3>
+      <img src="./qrcode.jpg" alt="QR Code">
+    </div>
+  </div>
+
+</body>
+</html>

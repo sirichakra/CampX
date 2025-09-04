@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>College Clubs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    header .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0 30px;
+      background-color: #DD2D4A;
+      border-bottom: 4px solid #9d7ccc;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      width: 300px;
+      height:100px;
+      background-image: url(".//logo-transparent-png.png");
+      background-size: contain;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    marquee {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .search {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search input {
+  width: 250px; 
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+    .club-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px;
+      justify-items: center;
+      background-color: #FDEDF2;
+    }
+
+    .club-item {
+      width: 70%; 
+      background: rgb(203, 65, 104);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      
+      text-align: center;
+      padding: 20px;
+      min-height: 350px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .club-item img {
+      width: 100%;
+      height: 220px; 
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .club-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* background-color: #fae1dd; */
+     /* background: hsla(332, 53%, 82%, 1); */
+
+   /* background: linear-gradient(90deg, hsla(332, 53%, 82%, 1) 0%, hsla(176, 57%, 89%, 1) 100%);  */
+   /* background: hsla(311, 74%, 87%, 1);  */
+   background-color: #FDEDF2; 
+ } 
+
+nav {
+    /* background-color:#a53860; */
+    background-color: #DD2D4A;
+    
+    padding:  10px 10px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 90px;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+   
+  }
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+  .menu li {
+    position: relative;
+    gap: 15px;
+    margin-right: 10px;
+    
+  }
+  .menu > li {
+    margin-left: 20px;
+
+  }
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    font-size: 11px;
+
+  }
+  .menu a:hover {
+    background-color: hotpink;
+  }
+  .menu a:active{
+    background-color: mediumvioletred;
+  }
+  .menu > li > a {
+    /* border: 2px solid #f8d9e0; /* light pastel pink or change as needed */
+    border-radius: 30px; 
+    padding: 10px 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+
+  }
+  
+  .menu li:hover > ul {
+    display: block;
+    
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f26a8d;
+    top: 100%;
+    left: 0;
+    min-width: 120px;
+    z-index: 999;
+    border-radius: 20px;
+    border: 1px solid white;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+   
+ }   
+.menu li:hover .dropdown {
+        max-height: 1000px; 
+        opacity: 1;
+        
+}
+  .dropdown li {
+    width: 100%;
+    list-style: none;
+
+  }
+  .dropdown a {
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+  .dropdown a:hover {
+    background-color: #ff9ab5;
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+  
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+    .menu.active {
+      display: flex;
+    }
+    .menu > li {
+      margin-left: 0;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  }
+  /* Container */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+  
+  /* Hide checkbox */
+  .dark-mode-toggle input {
+    display: none;
+  }
+  
+  /* Label acts as the switch track */
+  .switch {
+    width: 60px;
+    height: 30px;
+    background: #e4e4e4;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Sliding toggle (thumb) */
+  .slider {
+    background:orange;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: left 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  /* Icons */
+  .icon {
+    text-align: center;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Initially show sun, hide moon */
+  .sun {
+    opacity: 1;
+  }
+  .moon {
+    opacity: 0;
+  }
+  
+  /* When toggled ON (checked) */
+  .dark-mode-toggle input:checked + .switch .slider {
+    left: 45px;
+    background: #1f1f1f;
+  }
+  
+  /* Switch icons */
+  .dark-mode-toggle input:checked + .switch .slider .sun {
+    opacity: 0;
+  }
+  .dark-mode-toggle input:checked + .switch .slider .moon {
+    opacity: 1;
+  }
+  /* FOOTER BASE STYLES */
+footer {
+  background: linear-gradient(to right, #e84a5f, #dc3b65);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 40px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* FLEX CONTAINER */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 60px;
+  gap: 40px;
+}
+
+/* SECTION GENERAL STYLE */
+.footer-section {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-section ul li:hover {
+  transform: translateX(5px);
+  color: #ffe6e6;
+}
+
+/* LOGO SECTION */
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 370px;
+  height: auto;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 0px 5px white);
+  margin-right:50px;
+}
+
+.footer-logo-section h2 {
+  font-size: 24px;
+  margin: 5px 0 2px;
+}
+
+.footer-logo-section p {
+  font-size: 12px;
+  color: #eee;
+}
+
+/* SOCIAL ICONS */
+.footer-section p i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-section p i:hover {
+  color: lightblue;
+}
+
+/* BOTTOM FOOTER TEXT */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+
+  </style>
+</head>
+<body>
+  <html>
+    <head>
+        <title>Header</title>
+        <link rel="stylesheet" href="header.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+</html>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+        <img src="logo2_left.png">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="navbar">
+      <li><a href="Home.html"><h2>HOME</h2></a></li>
+
+      <li>
+        <a href="Events.html"><h2>EVENTS</h2> </a>
+        <ul class="dropdown">
+          <li><a href="#">Today’s Events</a></li>
+          <li><a href="#">Countdown Timer</a></li>
+          <li><a href="#">Event Categories</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="Talents1.html"><h2>TALENTS</h2></a>
+        <ul class="dropdown">
+          <li><a href="#">Talent Wall</a></li>
+          <li><a href="#">Puzzle Collage</a></li>
+          <li><a href="#">Spotlight</a></li>
+          <li><a href="#">Achievements</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="news.html"><h2>NEWS</h2> </a>
+        <!-- <ul class="dropdown">
+          <li><a href="#">Campus News</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Quote of the Day</a></li>
+        </ul> -->
+      </li>
+
+      <li>
+        <a href="interface.html"><h2>CLUBS</h2> </a>
+      </li>
+
+      <li>
+        <a href="Gallery.html"><h2>INTERACTIVE</h2> </a>
+        <ul class="dropdown">
+          <li><a href="map.html">Campus Map</a></li>
+          <li><a href="quote.html">Positivity Wall</a></li>
+          <li><a href="letter.html">Open Letters</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="calendar.html">Mini Calender</a></li>
+          <li><a href="wishing-wall.html">Wishing</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html"><h2>ABOUT</h2></a></li>
+
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="switch">
+          <div class="slider">
+            <i class="fas fa-sun icon sun"></i>
+            <i class="fas fa-moon icon moon"></i>
+          </div>
+        </label>
+      </div>
+      
+      
+    </ul>
+  </div>
+  
+  
+</nav>
+  
+
+<section>
+  <div class="club-container">
+    <div class="club-item">
+     <a href="cultural_club.html" target="_blank"><img src="culture_interface2.png" alt="Sports Club" ></a>
+      <div class="club-name">Cultural Club</div>
+    </div>
+
+    <div class="club-item">
+      <a href="coding_club.html" target="_blank"><img src="tech_interface_pink.png" alt="Coding Club"></a>
+      <div class="club-name">Technical Club</div>
+    </div>
+
+    <div class="club-item">
+      <a href="sports_club.html" target="_blank">
+        <img src="sports_interface.png" alt="Dance Club">
+      </a>
+      <div class="club-name">Sports Club</div>
+    </div>
+
+    <div class="club-item">
+      <a href="nss_club.html" target="_blank"><img src="nss_interface.png" alt="NSS Club"></a>
+      <div class="club-name">NSS Club</div>
+    </div>
+
+    <div class="club-item">
+     <a href="voice_of_words.html" target="_blank"> <img src="voice_interface.png" alt="Voice of Words Club"></a>
+      <div class="club-name">Voice of Words Club</div>
+    </div>
+
+    <div class="club-item">
+      <a href="uif_club.html" target="_blank"><img src="uif_interface.png" alt="UI/UX Club"></a>
+      <div class="club-name">UIF Club</div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-container">
+    <!-- <div class="footer-section">
+      <h2 class="footer-heading">🚀 Campus Connect</h2>
+      <p>Uniting ideas, talents, and opportunities on campus.</p>
+    </div> -->
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Home</li>
+        <li>Explore Clubs</li>
+        <li>Events</li>
+        <li>News & Announcements</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Resources</h3>
+      <ul>
+        <li>Student Helpdesk</li>
+        <li>FAQs</li>
+        <li>Guidelines</li>
+        <li>Terms & Privacy</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📍Surampalem, Andhra Pradesh</p>
+      <p>📧 campx@university.edu</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+      </p>
+    </div>
+
+    <div class="footer-logo-section">
+      <img src="logo2_left.png" class="footer-logo" />
+      <!-- <h2 style="margin: 5px 0 0; font-size: 22px;">CampX</h2>
+      <p style="font-size: 12px;">Where Campus Meets Experience</p> -->
+    </div>
+  </div>
+
+  <div class="footer-bottom" style="text-align: center; padding: 15px 0; color: #b0eaff;">
+    ©️ 2025 CampX. Crafted with ❤️.
+  </div>
+</footer>
+
+
+</body>
+</html>
